@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="it.luigidb.gdftester.QuestionFragment"
+    android:scrollIndicators="start|end">
+
+    <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/_id"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/question"
+            android:layout_below="@+id/_id"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/question"
+            android:layout_alignParentStart="true"
+            android:id="@+id/radioGroup">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/opt_a"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/opt_b"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/opt_c"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New RadioButton"
+                android:id="@+id/opt_d"
+                android:checked="false"
+                android:onClick="onRadioButtonClicked" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Text"
+            android:id="@+id/response"
+            android:layout_below="@+id/radioGroup"
+            android:layout_alignParentStart="true"
+            android:visibility="invisible" />
+
+</RelativeLayout>
