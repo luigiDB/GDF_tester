@@ -97,7 +97,7 @@ public class QuestionFragment extends Fragment {
         super.onDetach();
     }
 
-    public void onRadioButtonClicked(View view) {
+    /*public void onRadioButtonClicked(View view) {
         TextView responseTextView = (TextView)getActivity().findViewById(R.id.response);
         String response = (String)responseTextView.getText();
 
@@ -131,6 +131,6 @@ public class QuestionFragment extends Fragment {
                 }
                 break;
         }
-    }
+    }*/
 
 }
